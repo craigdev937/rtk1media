@@ -9,17 +9,17 @@ export const MediaAPI = createApi({
     tagTypes: ["Films", "TVShows"],
     baseQuery: fetchBaseQuery({ baseUrl: URL }),
     endpoints: (builder) => ({
-        tv: builder.query<ITV, void>({
-            query: () => ({
-                url: `/trending/tv/week?api_key=${API}`,
-                method: "GET"
-            }),
-            providesTags: ["TVShows"]
-        }),
         search: builder.query<ISearch, string>({
             query: (info) => ({
                 url: `/search/multi?query=${
                     info}&api_key=${API}`,
+                method: "GET"
+            }),
+            providesTags: ["TVShows"]
+        }),
+        tv: builder.query<ITV, void>({
+            query: () => ({
+                url: `/trending/tv/week?api_key=${API}`,
                 method: "GET"
             }),
             providesTags: ["TVShows"]

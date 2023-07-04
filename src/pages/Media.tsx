@@ -31,9 +31,11 @@ export const Media = () => {
                 <h1>Loading...</h1>
             ) : (
                 <section className="media">
-                {data && data.results.map((media) => (
-                    <MediaCard key={media.id} media={media} />
-                ))}
+                    {data!.results.map((media) => (
+                        <MediaCard 
+                            key={media.id} media={media} 
+                        />
+                    ))}
             </section>
             )}
         </React.Fragment>
