@@ -1,5 +1,6 @@
 import React from "react";
 import "./MediaCard.css";
+import { Link } from "react-router-dom";
 import { ISearchData } from "../models/Interfaces";
 const IMG = "https://image.tmdb.org/t/p/w500";
 
@@ -10,15 +11,13 @@ type SEA = {
 export const MediaCard = ({ media }: SEA) => {
     return (
         <React.Fragment>
-            <h1>
-                {media.name} || 
-                {media.title}
-            </h1>
-            <img 
-                alt={media.name} 
-                src={`${IMG}/${media.poster_path}`} 
-            />
-            <p>{media.overview}</p>
+            <aside>
+                <img 
+                    className="media__image"
+                    alt={media.name} 
+                    src={`${IMG}/${media.poster_path}`} 
+                />
+            </aside>
         </React.Fragment>
     );
 };

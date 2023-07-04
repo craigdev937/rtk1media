@@ -36,8 +36,8 @@ export interface ITV {
         release_date: string,
         origin_country: string[]        
     }[],
-    total_pages?: number,
-    total_results?: number
+    total_pages: number,
+    total_results: number
 };
 
 // For Searching TV Shows
