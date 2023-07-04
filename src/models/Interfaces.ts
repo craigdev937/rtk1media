@@ -40,6 +40,56 @@ export interface ITV {
     total_results?: number
 };
 
+// For Searching TV Shows
+export interface ISearch {
+    page: number,
+    results: {
+        adult: boolean,
+        backdrop_path: string,
+        genre_ids: number[],
+        id: number,
+        name: string,
+        title: string,
+        original_language: string,
+        original_title: string,
+        original_name: string,
+        overview: string,
+        popularity: number,
+        poster_path: string,
+        media_type: string,
+        release_date: string,
+        first_air_date: string,
+        video: boolean,
+        vote_average: number,
+        vote_count: number,
+        origin_country: string[]
+    }[],
+    total_pages: number,
+    total_results: number
+};
+
+export interface ISearchData {
+    adult: boolean,
+    backdrop_path: string,
+    genre_ids: number[],
+    id: number,
+    name: string,
+    title: string,
+    original_language: string,
+    original_title: string,
+    original_name: string,
+    overview: string,
+    popularity: number,
+    poster_path: string,
+    media_type: string,
+    release_date: string,
+    first_air_date: string,
+    video: boolean,
+    vote_average: number,
+    vote_count: number,
+    origin_country: string[]
+}
+
 export interface IFilmData {
     adult: boolean,
     backdrop_path: string,

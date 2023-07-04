@@ -15,7 +15,7 @@ export const FilmCard = ({ film }: FILM) => {
                 <p>{film.overview}</p>
                 <img 
                     alt={film.title}
-                    src={`${IMG}/${film.backdrop_path}`} 
+                    src={`${IMG}/${film.poster_path}`} 
                 />
             </section>
         </React.Fragment>
