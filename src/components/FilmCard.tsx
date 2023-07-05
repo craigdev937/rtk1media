@@ -1,5 +1,5 @@
 import React from "react";
-import "./MediaCard.css";
+import "./FilmCard.css";
 import { IFilmData } from "../models/Interfaces";
 const IMG = "https://image.tmdb.org/t/p/w500";
 
@@ -10,14 +10,13 @@ type FILM = {
 export const FilmCard = ({ film }: FILM) => {
     return (
         <React.Fragment>
-            <section>
-                <h1>{film.title}</h1>
-                <p>{film.overview}</p>
+            <aside className="film__card">
                 <img 
+                    className="film__image"
                     alt={film.title}
                     src={`${IMG}/${film.poster_path}`} 
                 />
-            </section>
+            </aside>
         </React.Fragment>
     );
 };

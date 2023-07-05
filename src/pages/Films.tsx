@@ -1,5 +1,4 @@
 import React from "react";
-import "./Films.css";
 import { MediaAPI } from "../global/MediaAPI";
 import { FilmCard } from "../components/FilmCard";
 
@@ -23,7 +22,7 @@ export const Films = () => {
     return (
         <React.Fragment>
             <h1>Films</h1>
-            <section className="tv">
+            <section className="film">
                 {data && data.results.map((film) => (
                     <FilmCard
                         key={film.id} film={film} 

@@ -1,0 +1,15 @@
+.film {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill, minmax(220px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    padding: 20px;
+}
+
+.film__image {
+    height: auto;
+    width: 200px;
+}
+
+
