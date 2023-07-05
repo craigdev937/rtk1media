@@ -31,6 +31,13 @@ export const MediaAPI = createApi({
             }),
             providesTags: ["Films"]
         }),
+        fvideo: builder.query<IFilm, number>({
+            query: (id) => ({
+                url: `/movie/${id}/videos?api_key=${API}`,
+                method: "GET"
+            }),
+            providesTags: ["Films"]
+        })
     }),
 });
 

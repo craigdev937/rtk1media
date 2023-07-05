@@ -7,7 +7,7 @@ type TVS = {
     tv: ITVData
 };
 
-export const TVCard = ({ tv }: TVS) => {
+export const TVCard = ({tv}: TVS) => {
     return (
         <React.Fragment>
             <section>

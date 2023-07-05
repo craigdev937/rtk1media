@@ -1,7 +1,8 @@
 import React from "react";
 import "./FilmCard.css";
 import { IFilmData } from "../models/Interfaces";
-const IMG = "https://image.tmdb.org/t/p/w500";
+const IMG = "https://image.tmdb.org/t/p/original";
+// const IMG = "https://image.tmdb.org/t/p/w500";
 
 type FILM = {
     film: IFilmData

@@ -1,4 +1,6 @@
 import React from "react";
+import { FaArrowAltCircleLeft, 
+    FaArrowAltCircleRight } from "react-icons/fa";
 import { MediaAPI } from "../global/MediaAPI";
 import { FilmCard } from "../components/FilmCard";
 
