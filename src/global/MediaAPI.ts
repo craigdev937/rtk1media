@@ -1,6 +1,6 @@
 import { createApi, 
     fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { ITV, ISearch, IFilm } from "../models/Interfaces";
+import { ITV, ISearch, IFilm, IFVideo } from "../models/Interfaces";
 const URL = "https://api.themoviedb.org/3";
 const API = process.env.API_KEY;
 
@@ -31,7 +31,7 @@ export const MediaAPI = createApi({
             }),
             providesTags: ["Films"]
         }),
-        fvideo: builder.query<IFilm, number>({
+        fvideo: builder.query<IFVideo, number>({
             query: (id) => ({
                 url: `/movie/${id}/videos?api_key=${API}`,
                 method: "GET"
